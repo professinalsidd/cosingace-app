@@ -26,20 +26,22 @@ const LoginScreen = () => {
         />
         <Text variant="headlineMedium">Login</Text>
       </View>
-      <InputComp
-        label="Email Address"
-        value={text}
-        onChange={(t: string) => setText(t)}
-        placeholder="Enter your email address"
-      />
-      <InputComp
-        label="Enter Password"
-        value={text}
-        secureTextEntry
-        onChange={(t: string) => setText(t)}
-        placeholder="Enter your password"
-      />
-      <ButtonComp title={'Login'} />
+      <View style={styles.content}>
+        <InputComp
+          label="Email Address"
+          value={text}
+          onChange={(t: string) => setText(t)}
+          placeholder="Enter your email address"
+        />
+        <InputComp
+          label="Enter Password"
+          value={text}
+          secureTextEntry
+          onChange={(t: string) => setText(t)}
+          placeholder="Enter your password"
+        />
+        <ButtonComp title={'Login'} />
+      </View>
       <View style={[LAYOUT.flexRowAJCenter, styles.linkCtn]}>
         <Text>Don’t you have an account </Text>
         <Text style={styles.link}>Signup</Text>
@@ -52,7 +54,10 @@ export default LoginScreen;
 
 const styles = StyleSheet.create({
   root: {marginVertical: '2%'},
-  img: {width: 160, height: 150, objectFit: 'contain'},
+  img: {width: 120, height: 120, objectFit: 'contain'},
+  content: {
+    flex: 1,
+  },
   linkCtn: {
     flex: 1,
   },

@@ -19,6 +19,7 @@ export const COLORS = {
   GREY_PRIMARY: '#282828',
   LIGHT_GREEN: '#C4F1DD',
   PURPLE: '#4B49D2',
+  GREEN: '#30AC76',
 };
 
 // Layout section for skipped to re use this lines

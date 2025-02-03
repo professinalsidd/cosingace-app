@@ -4,7 +4,10 @@ import {COLORS, LAYOUT} from '../../themes/theme';
 
 const ButtonComp = ({title, onClick, style}: ButtonTypes) => {
   return (
-    <Pressable style={[LAYOUT.flexCenter, styles.button]} onPress={onClick}>
+    <Pressable
+      android_ripple={{color: COLORS.GREEN}}
+      style={[LAYOUT.flexCenter, styles.button]}
+      onPress={onClick}>
       <Text style={[style, styles.btnText]}>{title}</Text>
     </Pressable>
   );
@@ -16,7 +19,7 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: COLORS.LIGHT_GREEN,
     borderRadius: 5,
-    height: '10%',
+    height: 50,
     marginVertical: '2%',
   },
   btnText: {

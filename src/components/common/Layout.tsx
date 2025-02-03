@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.WHITE,
   },
   subRoot: {
+    flex: 1,
     marginHorizontal: '3%',
   },
 });
