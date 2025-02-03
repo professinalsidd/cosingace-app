@@ -17,6 +17,8 @@ export const COLORS = {
   DIM_WHITE: '#D0D0D0',
   MEDIUM_WHITE: '#353535',
   GREY_PRIMARY: '#282828',
+  LIGHT_GREEN: '#C4F1DD',
+  PURPLE: '#4B49D2',
 };
 
 // Layout section for skipped to re use this lines
@@ -57,8 +59,8 @@ export const LAYOUT = {
     flexDirection: 'column',
   },
   flexRow: {
-    display: 'flex',
-    flexDirection: 'row',
+    display: 'flex' as 'flex',
+    flexDirection: 'row' as 'row',
   },
   flexCCenterWithGap: (gap = '0.2rem') => ({
     display: 'flex',
@@ -87,15 +89,15 @@ export const LAYOUT = {
     flexWrap: 'wrap',
   },
   flexRowAJCenter: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: 'flex' as 'flex',
+    flexDirection: 'row' as 'row',
+    alignItems: 'center' as 'center',
+    justifyContent: 'center' as 'center',
   },
   flexCenter: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: 'flex' as 'flex',
+    alignItems: 'center' as 'center',
+    justifyContent: 'center' as 'center',
   },
   flexColumJCenter: {
     display: 'flex',

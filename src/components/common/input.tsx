@@ -10,7 +10,7 @@ const InputComp = ({
   placeholder,
   style,
   secureTextEntry = false,
-}: InputProps) => {
+}: InputTypes) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(!secureTextEntry);
   return (
     <TextInput

@@ -2,8 +2,9 @@ import {Image, StyleSheet, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import LayoutComp from '../../components/common/Layout';
 import InputComp from '../../components/common/input';
-import {LAYOUT} from '../../themes/theme';
+import {COLORS, LAYOUT} from '../../themes/theme';
 import {Text} from 'react-native-paper';
+import ButtonComp from '../../components/common/Button';
 
 const LoginScreen = () => {
   const [showSplashScreen, setShowSplashScreen] = useState(true);
@@ -38,6 +39,11 @@ const LoginScreen = () => {
         onChange={(t: string) => setText(t)}
         placeholder="Enter your password"
       />
+      <ButtonComp title={'Login'} />
+      <View style={[LAYOUT.flexRowAJCenter, styles.linkCtn]}>
+        <Text>Don’t you have an account </Text>
+        <Text style={styles.link}>Signup</Text>
+      </View>
     </LayoutComp>
   );
 };
@@ -47,4 +53,11 @@ export default LoginScreen;
 const styles = StyleSheet.create({
   root: {marginVertical: '2%'},
   img: {width: 160, height: 150, objectFit: 'contain'},
+  linkCtn: {
+    flex: 1,
+  },
+  link: {
+    color: COLORS.PURPLE,
+    textAlign: 'center',
+  },
 });
