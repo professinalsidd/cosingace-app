@@ -1,3 +1,5 @@
+import {StyleProp, TextStyle} from 'react-native';
+
 type LayoutType = {
   children: React.ReactNode;
 };
@@ -12,7 +14,14 @@ type InputTypes = {
 };
 
 type ButtonTypes = {
-  title: String;
-  onClick?: () => void;
-  style?: TextStyle;
+  title: string;
+  onPress?: () => void;
+  style?: StyleProp<TextStyle>;
+  containerStyle?: StyleProp<ViewStyle>;
+};
+
+type DateTypes = {
+  mode?: any;
+  date: any;
+  setDate: any;
 };

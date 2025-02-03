@@ -5,8 +5,10 @@ import InputComp from '../../components/common/input';
 import {COLORS, LAYOUT} from '../../themes/theme';
 import {Text} from 'react-native-paper';
 import ButtonComp from '../../components/common/Button';
+import {useNavigation} from '@react-navigation/native';
 
 const LoginScreen = () => {
+  const navigation = useNavigation();
   const [showSplashScreen, setShowSplashScreen] = useState(true);
   const [text, setText] = useState('');
 
@@ -44,7 +46,11 @@ const LoginScreen = () => {
       </View>
       <View style={[LAYOUT.flexRowAJCenter, styles.linkCtn]}>
         <Text>Don’t you have an account </Text>
-        <Text style={styles.link}>Signup</Text>
+        <Text
+          onPress={() => navigation.navigate('sign-up' as never)}
+          style={styles.link}>
+          Signup
+        </Text>
       </View>
     </LayoutComp>
   );

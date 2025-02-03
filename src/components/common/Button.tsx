@@ -1,14 +1,20 @@
-import {Pressable, StyleSheet, Text} from 'react-native';
+import {Pressable, StyleSheet, Text, TextStyle, ViewStyle} from 'react-native';
 import React from 'react';
 import {COLORS, LAYOUT} from '../../themes/theme';
+import {ButtonTypes} from '../../types';
 
-const ButtonComp = ({title, onClick, style}: ButtonTypes) => {
+const ButtonComp: React.FC<ButtonTypes> = ({
+  title,
+  onPress,
+  style,
+  containerStyle,
+}) => {
   return (
     <Pressable
       android_ripple={{color: COLORS.GREEN}}
-      style={[LAYOUT.flexCenter, styles.button]}
-      onPress={onClick}>
-      <Text style={[style, styles.btnText]}>{title}</Text>
+      style={[LAYOUT.flexCenter, styles.button, containerStyle]}
+      onPress={onPress}>
+      <Text style={[styles.btnText, style]}>{title}</Text>
     </Pressable>
   );
 };
@@ -21,9 +27,12 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     height: 50,
     marginVertical: '2%',
-  },
+    justifyContent: 'center',
+    alignItems: 'center',
+  } as ViewStyle,
   btnText: {
     textAlign: 'center',
     fontSize: 16,
-  },
+    color: COLORS.BLACK,
+  } as TextStyle,
 });
