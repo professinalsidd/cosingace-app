@@ -24,7 +24,7 @@ const InputComp = ({
       style={[styles.input, style]}
       placeholder={placeholder}
       placeholderTextColor={COLORS.BLACK}
-      theme={{colors: {outline: COLORS.DIM_GREY, primary: COLORS.DIM_GREY}}}
+      theme={{colors: {outline: 'transparent', primary: 'transparent'}}}
       secureTextEntry={!isPasswordVisible}
       right={
         secureTextEntry && (
