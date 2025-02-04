@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native';
 import React, {useState} from 'react';
 import {TextInput} from 'react-native-paper';
 import {COLORS} from '../../themes/theme';
+import {InputTypes} from '../../types';
 
 const InputComp = ({
   label,

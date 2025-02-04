@@ -28,7 +28,7 @@ const DateComp: React.FC<DateCompProps> = ({
         title={title ? title && `${title}${formattedValue}` : label}
         onPress={() => setOpen(true)}
         containerStyle={{
-          backgroundColor: COLORS.GREY,
+          backgroundColor: COLORS.WHITE,
           alignItems: 'flex-start',
           paddingHorizontal: '2%',
         }}

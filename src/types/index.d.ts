@@ -2,6 +2,7 @@ import {StyleProp, TextStyle} from 'react-native';
 
 type LayoutType = {
   children: React.ReactNode;
+  style?: StyleProp;
 };
 
 type InputTypes = {

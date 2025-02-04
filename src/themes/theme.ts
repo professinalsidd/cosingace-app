@@ -125,9 +125,9 @@ export const LAYOUT = {
     justifyContent: 'center',
   },
   flexAlignRowCenter: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
+    display: 'flex' as 'flex',
+    flexDirection: 'row' as 'row',
+    alignItems: 'center' as 'center',
   },
   flexBetweenColumnCenter: {
     display: 'flex',
@@ -151,9 +151,9 @@ export const LAYOUT = {
     flexDirection: 'column',
   },
   rowStart: {
-    display: 'flex',
-    justifyContent: 'flex-start',
-    flexDirection: 'row',
+    display: 'flex' as 'flex',
+    justifyContent: 'flex-start' as 'flex-start',
+    flexDirection: 'row' as 'row',
   },
   rowEnd: {
     display: 'flex',
