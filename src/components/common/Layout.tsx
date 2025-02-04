@@ -1,12 +1,14 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import {COLORS} from '../../themes/theme';
+import LinearGradient from 'react-native-linear-gradient';
+import {LayoutType} from '../../types';
 
 const LayoutComp = ({children}: LayoutType) => {
   return (
-    <View style={styles.root}>
+    <LinearGradient colors={['#76C889', '#DBFFE4']} style={styles.root}>
       <View style={styles.subRoot}>{children}</View>
-    </View>
+    </LinearGradient>
   );
 };
 

@@ -33,3 +33,9 @@ type CardsTypes = {
   link: string;
   type?: string;
 };
+
+type TextTypes = {
+  style?: TextStyle;
+  type: string;
+  title: string;
+};
