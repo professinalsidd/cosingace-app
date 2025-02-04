@@ -36,9 +36,10 @@ export const LAYOUT = {
     alignItems: 'center',
   },
   flexRowBetween: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    display: 'flex' as 'flex',
+    justifyContent: 'space-between' as 'space-between',
+    alignItems: 'center' as 'center',
+    flexDirection: 'row' as 'row',
   },
   columnStart: {
     display: 'flex',

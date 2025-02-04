@@ -42,7 +42,10 @@ const LoginScreen = () => {
           onChange={(t: string) => setText(t)}
           placeholder="Enter your password"
         />
-        <ButtonComp title={'Login'} />
+        <ButtonComp
+          title={'Login'}
+          onPress={() => navigation.navigate('dashboard' as never)}
+        />
       </View>
       <View style={[LAYOUT.flexRowAJCenter, styles.linkCtn]}>
         <Text>Don’t you have an account </Text>

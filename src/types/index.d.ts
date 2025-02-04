@@ -25,3 +25,11 @@ type DateTypes = {
   date: any;
   setDate: any;
 };
+
+type CardsTypes = {
+  headerTitle: string;
+  label: string;
+  description: string;
+  link: string;
+  type?: string;
+};
