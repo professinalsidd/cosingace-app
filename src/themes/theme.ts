@@ -25,9 +25,9 @@ export const COLORS = {
 // Layout section for skipped to re use this lines
 export const LAYOUT = {
   flexCCenter: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
+    display: 'flex' as 'flex',
+    justifyContent: 'center' as 'center',
+    alignItems: 'center' as 'center',
   },
   columnCCenter: {
     display: 'flex',

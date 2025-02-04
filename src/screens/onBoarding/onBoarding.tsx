@@ -27,7 +27,7 @@ const OnBoardingScreen = () => {
               <View style={styles.btn}>
                 <ButtonComp
                   title="Let's Begin"
-                  onPress={() => navigation.navigate('login' as never)}
+                  onPress={() => navigation.navigate('splash' as never)}
                 />
               </View>
             )}
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   slide1: {
     height: '70%',
   },
-  img: {width: '70%', height: '70%', objectFit: 'contain'},
+  img: {width: '100%', height: '70%', objectFit: 'contain'},
   gd: {
     fontSize: 30,
     fontWeight: '900',

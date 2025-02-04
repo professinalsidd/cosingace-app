@@ -1,15 +1,27 @@
 import {Image, StyleSheet, View} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
+import LayoutComp from '../../components/common/Layout';
+import {LAYOUT} from '../../themes/theme';
+import {useNavigation} from '@react-navigation/native';
 
 const SplashScreen = () => {
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('login' as never);
+    }, 1000);
+  }, [navigation]);
   return (
-    <View style={styles.root}>
-      <Image
-        source={require('../../assets/images/logo.png')}
-        alt="Logo"
-        style={styles.img}
-      />
-    </View>
+    <LayoutComp>
+      <View style={[styles.root, LAYOUT.flexCCenter]}>
+        <Image
+          source={require('../../assets/images/logo.png')}
+          alt="Logo"
+          style={styles.img}
+        />
+      </View>
+    </LayoutComp>
   );
 };
 
@@ -18,10 +30,6 @@ export default SplashScreen;
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
   },
-  img: {width: 150, height: 150, objectFit: 'contain'},
+  img: {width: '50%', height: '50%', objectFit: 'contain'},
 });
