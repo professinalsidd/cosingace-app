@@ -40,7 +40,7 @@ const LoginScreen = () => {
           />
           <ButtonComp
             title={'Login'}
-            onPress={() => navigation.navigate('dashboard' as never)}
+            onPress={() => navigation.navigate('bottomRoute' as never)}
           />
         </View>
         <View style={[LAYOUT.flexRowAJCenter, styles.linkCtn]}>
