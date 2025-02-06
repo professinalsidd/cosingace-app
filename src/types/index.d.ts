@@ -40,3 +40,18 @@ type TextTypes = {
   type?: string;
   title: string;
 };
+
+type CardItem = {
+  img: any;
+  heading?: string;
+  content?: string;
+  key?: string;
+};
+
+type CardTypes = {
+  data: CardItem[];
+};
+
+type headerType = {
+  title: string;
+};

@@ -22,13 +22,13 @@ function BottomRoutes() {
             case 'Home':
               iconName = 'home';
               break;
-            case 'Study':
+            case 'study':
               iconName = 'book-open';
               break;
-            case 'Game':
+            case 'game':
               iconName = 'gamepad-variant';
               break;
-            case 'Interview':
+            case 'interview':
               iconName = 'briefcase';
               break;
             case 'User':
@@ -45,9 +45,9 @@ function BottomRoutes() {
         headerShown: false,
       })}>
       <Tab.Screen name="Home" component={DashboardScreen} />
-      <Tab.Screen name="Study" component={StudyScreen} />
-      <Tab.Screen name="Game" component={GameScreen} />
-      <Tab.Screen name="Interview" component={InterviewScreen} />
+      <Tab.Screen name="study" component={StudyScreen} />
+      <Tab.Screen name="game" component={GameScreen} />
+      <Tab.Screen name="interview" component={InterviewScreen} />
       <Tab.Screen name="User" component={UserScreen} />
     </Tab.Navigator>
   );

@@ -1,11 +1,28 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {ScrollView, StyleSheet, View} from 'react-native';
+import React, {useState} from 'react';
+import LayoutComp from '../../components/common/Layout';
+import HeaderComp from '../../components/common/header';
+import CardComp from '../../components/common/cards';
+import InputComp from '../../components/common/input';
+import {study} from '../../constant';
 
 const StudyScreen = () => {
+  const [text, setText] = useState('');
   return (
-    <View>
-      <Text>StudyScreen</Text>
-    </View>
+    <LayoutComp>
+      <HeaderComp title="Study Material" />
+      <View>
+        <InputComp
+          placeholder="Search topic"
+          label="Search topic"
+          value={text}
+          onChange={(t: string) => setText(t)}
+        />
+      </View>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <CardComp data={study} />
+      </ScrollView>
+    </LayoutComp>
   );
 };
 
