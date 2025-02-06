@@ -7,11 +7,12 @@ type LayoutType = {
 
 type InputTypes = {
   label: string;
-  value: string;
-  onChange: (text: string) => void;
-  placeholder: string;
+  value?: string;
+  onChange?: (text: string) => void;
+  placeholder?: string;
   style?: TextStyle;
   secureTextEntry?: boolean;
+  readOnly?: boolean;
 };
 
 type ButtonTypes = {

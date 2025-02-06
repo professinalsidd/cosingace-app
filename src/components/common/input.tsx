@@ -11,6 +11,7 @@ const InputComp = ({
   placeholder,
   style,
   secureTextEntry = false,
+  readOnly,
 }: InputTypes) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState(!secureTextEntry);
   return (
@@ -19,6 +20,7 @@ const InputComp = ({
       value={value}
       onChangeText={onChange}
       mode="outlined"
+      readOnly={readOnly}
       autoFocus
       focusable
       style={[styles.input, style]}
