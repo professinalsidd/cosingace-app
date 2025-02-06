@@ -11,7 +11,9 @@ const Stack = createStackNavigator();
 export default function StackRoutes() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Navigator
+        initialRouteName="bottomRoute"
+        screenOptions={{headerShown: false}}>
         <Stack.Screen name="onBoarding" component={OnBoardingScreen} />
         <Stack.Screen name="login" component={LoginScreen} />
         <Stack.Screen name="splash" component={SplashScreen} />

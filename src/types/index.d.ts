@@ -37,6 +37,6 @@ type CardsTypes = {
 
 type TextTypes = {
   style?: TextStyle;
-  type: string;
+  type?: string;
   title: string;
 };

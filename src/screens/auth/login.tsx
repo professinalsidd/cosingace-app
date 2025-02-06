@@ -1,4 +1,4 @@
-import {Image, StyleSheet, View} from 'react-native';
+import {Image, Pressable, StyleSheet, View} from 'react-native';
 import React, {useState} from 'react';
 import LayoutComp from '../../components/common/Layout';
 import InputComp from '../../components/common/input';
@@ -21,8 +21,12 @@ const LoginScreen = () => {
         />
       </View>
       <LayoutComp style={styles.layout}>
-        <View style={[LAYOUT.rowStart, styles.root]}>
+        <View style={[LAYOUT.flexRowBetween, styles.root]}>
           <TextComp style={styles.heading} title="Login" type="md" />
+          <Pressable
+            onPress={() => navigation.navigate('bottomRoute' as never)}>
+            <TextComp style={styles.skip} title="Skip" type="md" />
+          </Pressable>
         </View>
         <View style={styles.content}>
           <InputComp
@@ -74,4 +78,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   heading: {textAlign: 'left'},
+  skip: {
+    color: COLORS.BLUE,
+    textDecorationLine: 'underline',
+    fontSize: 16,
+    fontWeight: '900',
+  },
 });

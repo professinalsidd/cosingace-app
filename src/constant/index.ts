@@ -30,3 +30,42 @@ export const onBoarding = [
     des: 'Join thousands of learners and take your coding skills to the next level.',
   },
 ];
+
+export const swiperData = [
+  {
+    img: require('../assets/images/banner1.png'),
+    content:
+      "Unlock your coding potential with structured lessons, hands-on exercises, and real-world projects. No matter where you are on your journey, now is the perfect time to learn and grow as a developer. Let's code your future!",
+  },
+  {
+    img: require('../assets/images/banner2.png'),
+    content:
+      'Every great coder starts somewhere! Dive into interactive lessons, build real projects, and sharpen your skills—one step at a time. Your coding journey begins now!',
+  },
+  {
+    img: require('../assets/images/banner3.png'),
+    content:
+      'Kickstart your coding journey with 7 days of free classes! Learn HTML, CSS, JavaScript, React Native, and more with hands-on lessons and real-world projects. No cost, no risk—just pure learning! Start today!',
+  },
+];
+
+export const dashboardList = [
+  {
+    img: require('../assets/images/study.png'),
+    heading: 'Study Material',
+    content:
+      'Master the most in-demand programming languages, including HTML, CSS, JavaScript, React Native, Node.js, EJS, and jQuery. Learn step by step with interactive lessons, real-world projects, and coding challenges!',
+  },
+  {
+    img: require('../assets/images/game.png'),
+    heading: 'Game Zone Quiz ',
+    content:
+      'Test your coding skills with fun and interactive quizzes! Challenge yourself with questions on HTML, CSS, JavaScript, React Native, Node.js, and more. Play, learn, and level up your programming knowledge!',
+  },
+  {
+    img: require('../assets/images/interview.png'),
+    heading: 'Interviews Questions',
+    content:
+      'Interview questions assess technical skills, problem-solving, and communication, covering core concepts and coding challenges.',
+  },
+];
