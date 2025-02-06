@@ -115,3 +115,23 @@ export const study = [
       'Build modern, interactive web applications with React! Master components, hooks, state management, and more with hands-on lessons and real-world projects. Start creating dynamic websites today!',
   },
 ];
+
+export const game = [
+  {
+    key: 'quiz',
+    img: require('../assets/images/game.png'),
+    heading: 'Quiz Game',
+    content:
+      'Test your coding skills with fun and interactive quizzes! Challenge yourself with questions on HTML, CSS, JavaScript, React Native, Node.js, and more. Play, learn, and level up your programming knowledge!',
+  },
+];
+
+export const interview = [
+  {
+    key: 'html',
+    img: require('../assets/images/interview.png'),
+    heading: 'Html Questions',
+    content:
+      'HTML is the foundation of every website! Learn how to structure web pages, create headings, paragraphs, images, links, and more with interactive lessons and hands-on projects. Start your web development journey today!',
+  },
+];
